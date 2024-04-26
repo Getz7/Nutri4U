@@ -1,0 +1,63 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/79ebbbb4e2.js" crossorigin="anonymous"></script>
+    <link href="~/css/Landing.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <div>
+                <img src="../Resources/LogoCompletoBlanco.png" alt="">
+            </div>
+        </div>
+        <nav class="navbar">
+            <a href ="@Url.Action("Login", "LandingPage")" id="SignIn">Iniciar sesión</a>
+            <a href="@Url.Action("CreateUser", "LandingPage")" id="CreateUser">Crear Usuario</a>
+        </nav>
+    </header>
+    <div class="bg">
+        <img class="img-container" src="../Resources/img1.jpg" style="width:100%">
+        <div class="text-inside-image">Come bien, vive mejor: tu camino hacia una vida más saludable</div>
+    </div>
+    <div class="container">
+        <div class="block-atribute">
+            <p class="text-center">Navegación Intuitiva</p>
+            <i class="fa-solid fa-apple-whole icon"></i>
+        </div>
+        <div class="block-atribute">
+            <p class="text-center">Contenido Científicamente Fundado</p>
+            <i class="fa-solid fa-flask icon"></i>
+        </div>
+        <div class="block-atribute">
+            <p class="text-center">Diseño Atractivo</p>
+            <i class="fa-solid fa-object-group icon"></i>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../Resources/Logo.png" alt="Footer Logo">
+            </div>
+          
+        </div>
+       
+        <div class="footer-bottom">
+            <p>&copy; 2024 Nutri4U. All rights reserved.</p>
+        </div>
+    </footer>
+       
+
+
+
+</body>
+</html>

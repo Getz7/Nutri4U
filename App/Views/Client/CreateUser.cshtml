@@ -1,0 +1,91 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/CreateUser.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <div>
+                <img src="../Resources/LogoCompletoBlanco.png" alt="">
+            </div>
+        </div>
+        <nav class="navbar">
+            <a href="@Url.Action("Menu", "Nutri")" id="SignIn">Iniciar Sesión</a>
+        </nav>
+    </header>
+
+
+    <div class="contenedor">
+
+
+        <main class="main-content">
+            <div class="container-content">
+                <h1>Registrate </h1>
+                <h2>Por favor llena todos los espacios con la información correspondiente</h2>
+                <div class="info-and-photo-container">
+                    <div class="register-container">
+                        <div class="form-row">
+                            <div class="input-container">
+                                <label>Nombre</label>
+                                <input class="input required" id="txt-name" type="text" name="brand" />
+                            </div>
+                            <div class="input-container">
+                                <label>Apellido</label>
+                                <input id="txt-lastName" class="input required" type="text" name="portionHome" />
+                            </div>
+                            
+                        </div>
+                        <div class="form-row">
+                            <div class="input-container">
+                                <label>Cédula</label>
+                                <input class="input required" id="txt-cedula" type="text" name="brand" />
+                            </div>
+                            <div class="input-container">
+                                <label>Edad</label>
+                                <input id="txt-age" class="input required" type="number" name="excFlour" />
+                            </div>
+                            
+                        </div>
+                        <div class="form-row">
+                            <div class="input-container">
+                                <label>Rol</label>
+                                <select class="input required" id="roleType" name="categoryType">
+                                    <option id="" value=""></option>
+                                    <option id="roleCostumer" value="cliente">Cliente</option>
+                                    <option id="roleNutri" value="nutricionista">Nutricionista</option>
+                                </select>
+                            </div>
+                            <div class="input-container">
+                                <label>Correo electrónico</label>
+                                <input id="text-email" class="input required" type="text" name="exceDairySkim" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-container">
+                                <label>Contraseña</label>
+                                <input id="text-password" class="input required" type="password" name="exceDairySkim" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="btn-container">
+                        <button id="btn-continue">Continuar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/swal/dist/sweetalert2.all.min.js"></script>
+    <script src="~/js/CreateUser.js" asp-append-version="true"></script>
+</body>
+</html>

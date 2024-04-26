@@ -1,0 +1,162 @@
+﻿
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    --color-green: #8BB363;
+    --color-yellow: #FBBC0C;
+    --color-brown: #97533E;
+    --color-dark-brown: #6F5A55;
+    --color-bg: #F1F0EE;
+    --color-white: #FFFFFF;
+}
+
+
+.header {
+    width: 100%;
+    height: 100px;
+    background: var(--color-green);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 85px;
+}
+
+/*Items navbar*/
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+    .navbar a {
+        position: relative;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 500;
+        text-decoration: none;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: 0.4s;
+    transform-origin: center;
+    transform: scaleX(0);
+}
+
+.navbar a:hover::before {
+    width: 100%;
+    transform: scaleX(1);
+    left: 0;
+}
+html, body {
+    height: 100%;
+    background-color: var(--bg-color);
+}
+
+.img-container {
+    width: 100%;
+    display: block;
+    height: 740px;
+}
+
+
+.container {
+    height:25%;
+    width: 100%;
+    display: flex;
+    background: var(--color-green);
+}
+.bg {
+    position: relative;
+    background: var(--color-green);
+}
+.block-atribute {
+    width: 33.33%;
+    text-align: center; /* Center the content */
+}
+
+.text-center {
+    padding: 3%;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.icon {
+    padding:5%;
+    color:white;
+    font-size: 75px; 
+    
+}
+
+
+
+
+.text-inside-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.footer {
+    background: var(--color-dark-brown);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    width: 140px; /* Adjust the width of your logo */
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footer-bottom {
+    font-size: 30px;
+   
+}
+
+/* Center the image and text */
+.footer-content,
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

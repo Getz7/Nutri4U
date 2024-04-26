@@ -1,0 +1,54 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/PerfilNutri.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <div>
+                <img src="../Resources/LogoCompletoBlanco.png" alt="">
+            </div>
+        </div>
+        <nav class="navbar">
+            <a href="@Url.Action("MenuCliente", "Client")" id="SignIn">Volver al menu</a>
+        </nav>
+    </header>
+    <div class="perfil">
+        <h1>Mi Perfil</h1>
+    </div>
+
+    <div class="info">
+        <div class="labels">
+            <p>Nombre</p>
+            <p>Cedula</p>
+            <p>Apellido</p>
+
+            <p>Correo</p>
+            <p>Edad</p>
+        </div>
+        <div class="info-content">
+            <p id="nombreUsuario"></p>
+            <p id="cedula"></p>
+            <p id="apellido"></p>
+    
+            <p id="correo"></p>
+            <p id="edad"></p>
+        </div>
+        <div class="btn-container ">
+            <button id="btn-modify">Modificar Datos</button>
+        </div>
+
+    </div>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/swal/dist/sweetalert2.all.min.js"></script>
+    <script src="~/js/PerfilClient.js" asp-append-version="true"></script>
+</body>
+</html>

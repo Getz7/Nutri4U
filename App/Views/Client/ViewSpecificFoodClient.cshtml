@@ -1,0 +1,46 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/SpecificFood.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <div>
+                 <img src="~/Resources/LogoCompletoBlanco.png" alt="">
+            </div>
+        </div>
+        <nav class="navbar">
+            <a href="@Url.Action("Menu","Nutri")">Menú</a>
+            <a href="@Url.Action("ViewFood","Nutri")">Productos</a>
+        </nav>
+    </header>
+    <div class="containerSpecific">
+
+        <div class="specificContentPhoto" id="photo">
+        
+        </div>
+         <div class="specificContentInfo" id="info">
+       
+        </div>
+         
+    </div>
+    <div class="button">
+                    <div class="btn-container">
+                        <button id="btn-modify">Agregar a favoritos</button>
+                    </div>
+    </div>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/swal/dist/sweetalert2.all.min.js"></script>
+    <script src="~/js/ViewSpecificFoodClient.js" asp-append-version="true"></script>
+    
+
+</body>
+</html>

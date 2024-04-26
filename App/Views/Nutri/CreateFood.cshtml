@@ -1,0 +1,164 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/CreateFood.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <div>
+                <img src="../Resources/LogoCompletoBlanco.png" alt="">
+            </div>
+        </div>
+        <nav class="navbar">
+            <a href="@Url.Action("Menu", "Nutri")" id="SignIn">Volver al menú</a>
+            <a href="@Url.Action("ViewFood", "Nutri")" id="SignIn">Comidas</a>
+        </nav>
+    </header>
+
+
+    <div class="contenedor">
+
+
+        <main class="main-content">
+            <div class="container-content">
+                <h1>Registra Un Nuevo Alimento </h1>
+                <div class="info-and-photo-container">
+                            <div class="register-container">
+                                <div class="form-row">
+                                    <div class="input-container">
+                                        <label>Name</label>
+                                        <input class="input required" id="txt-name" type="text" name="brand" />
+                                    </div>
+                                    <div class="input-container">
+                                        <label>Marca</label>
+                                        <input class="input required" id="txt-brand" type="text" name="brand" />
+                                    </div>
+                                  
+                                    <div class="input-container">
+                                        <label>Categoria</label>
+                                        <select class="input required" id="categoryType" name="categoryType">
+                                            <option id="" value=""></option>
+                                            <option id="catCereal" value="Cereales">Cereales</option>
+                                            <option id="catSalsa" value="Salsas y aderezos">Salsas y aderezos</option>
+                                            <option id="catCarne" value="Carnes y Mariscos Enlatados">Carnes y Mariscos Enlatados</option>
+                                            <option id="catPastas" value="Pastas">Pastas</option>
+                                            <option id="catUntables" value="Untables">Untables</option>
+                                            <option id="catVegetales" value="Vegetales enlatados">Vegetales enlatados</option>
+                                            <option id="catAceites" value="Aceites y grasas">Aceites y grasas</option>
+                                            <option id="catAzucar" value="Azúcar y substitutos">Azúcar y substitutos</option>
+                                            <option id="catRefrescos" value="Gaseosas y refrescos">Gaseosas y refrescos</option>
+                                            <option id="catEnergeticas" value="Bebidas Energéticas">Bebidas Energéticas</option>
+                                            <option id="catHelados" value="Helados">Helados</option>
+                                            <option id="catEmbutidos" value="Embutidos">Embutidos</option>
+                                            <option id="catQuesos" value="Quesos">Quesos</option>
+                                            <option id="catMantequilla" value="Mantequillas y margarinas">Mantequillas y margarinas</option>
+                                            <option id="catLeche" value="Leche">Leche</option>
+                                            <option id="catYogur" value="Yogur">Yogur</option>
+                                            <option id="catPan" value="Pan y tortillas">Pan y tortillas</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-container">
+                                        <label>Porcion en gramos</label>
+                                <input id="portionGrams" class="input required" type="number" name="portionGrams" />
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="input-container">
+                                        <label>Porcion Casera</label>
+                                <input id="portionHome" class="input required" type="number" name="portionHome" />
+                                    </div>
+                                    <div class="input-container">
+                                        <label>IntercambioHarina</label>
+                                <input id="excFlour" class="input required" type="number" name="excFlour" />
+                                    </div>
+                                    <div class="input-container">
+                                        <label>Intercambio de Lacteo Descremado</label>
+                                <input id="excDairySkim" class="input required" type="number" name="exceDairySkim" />
+                                    </div>
+                                    <div class="input-container">
+                                        <label>Intercambio de Lacteo Semi Descremado</label>
+                                <input id="excDairySemi" class="input required" type="number" name="excDairySemi" />
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="input-container">
+                                        <label>Intercambio de Lacteo Entero</label>
+                                <input id="excDairyWhole" class="input required" type="number" name="excDairyWhole" />
+                                    </div>
+                                    <div class="input-container">
+                                        <label>Intercambio Azucar</label>
+                                <input class="input required" id="excSugar" type="number" name="excSugar" />
+                                    </div>
+                                    <div class="input-container">
+                                        <label>Intercambio de Grasa</label>
+                                <input id="excFat" class="input required" type="number" name="excFat" />
+                                    </div>
+                                    <div class="input-container">
+                                        <label>Intercambio de Carne Magra</label>
+                                <input id="excLeanMeat" class="input required" type="number" name="excLeanMeat" />
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="input-container">
+                                        <label>Intercambio de Carne Semi Magra</label>
+                                <input id="excSemiLeanMeat" class="input required" type="number" name="excSemiLeanMeat" />
+                                    </div>
+                                    <div class="input-container">
+                                        <label>Intercambio de Carne Grasa</label>
+                                <input id="excFatMeat" class="input required" type="number" name="excFatMeat" />
+                                    </div>
+                                    <div class="input-container">
+                                        <label>Intercambio de Leguminosa</label>
+                                <input id="excLeguminous" class="input required" type="number" name="excLeguminous" />
+                                    </div>
+                                    <div class="input-container">
+                                        <label>Intercambio Fruta</label>
+                                <input id="excFruit" class="input required" type="number" name="excFruit" />
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                 
+                                    <div class="input-container">
+                                        <label>Intercambio Vegetal</label>
+                                        <input id="excVegetable" class="input required" type="number" name="excVegetable" />
+                                    </div>
+                                    <div class="input-container">
+                                        <label>Libre</label>
+                                        <select class="input required" id="excFree" name="excFree">
+                                            <option id="" value=""></option>
+                                    <option id="noLibre" value="1">Si</option>
+                                            <option id ="esLibre"  value="0">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-container">
+                                        <label>Url de la imagen</label>
+                                        <input id="image" class="input required" type="text" name="image" />
+                                    </div>
+                                   
+                                </div>
+
+                            </div>
+                </div>
+                <div class="button">
+                    <div class="btn-container">
+                        <button id="btn-continue">Continuar</button>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/swal/dist/sweetalert2.all.min.js"></script>
+   
+    <script src="~/js/CreateFood.js" asp-append-version="true"></script>
+</body>
+</html>
