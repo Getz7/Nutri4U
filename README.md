@@ -1,5 +1,5 @@
-#Nutri4U
-##Nutritional App
+# Nutri4U
+## Nutritional App
 
 *	Utilized ASP.NET MVC to develop the server-side logic and manage user interactions with the application.
 *	Implemented Azure Cosmos DB for scalable and efficient database management, ensuring quick data retrieval and storage.
